@@ -5,10 +5,51 @@
     <meta name="keywords=" content="bla bla">
     <meta name="description" content="bla bla">
 <title>Titolo della pagina...</title>
+<style>
+#uno {
+    background-color: powderblue;
+}
+#uno > p:hover{
+    background-color: aqua;
+}
+.due {
+    background-color: aquamarine;
+    color: blue;
+    padding: 28px 28px;
+}
+.due > p:hover{
+    background-color: powderblue;
+}
+p {
+    margin: 20px;
+    border-top: 5px solid red;
+    border-bottom: 5px dotted black;
+    border-radius: 25px;
+    text-transform: uppercase;
+    padding: 10px;
+}
+p:hover{
+    outline: yellow solid 5px;
+}
+
+</style>
 </head>
 <body>
-<h2>Titolo</h2>
-<p>Prova 1</p>
-
+     <h2>Titolo</h2>
+    <div id="uno">
+         <p>Prova 1</p>
+         <p>Lorem Ipsum</p>
+         <p>Lorem <span>Ipsum</span> Dolor</p>
+    </div>
+    <div>
+        <p>Prova 2</p>
+   </div>
+   <div class="tre">
+    <p>Prova 4</p>
+</div>
+    <div class="due">
+        <p>Prova 3</p>
+        <p>Lorem Ipsum</p>
+    </div>
 </body>
 </html>
